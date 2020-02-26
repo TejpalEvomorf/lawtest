@@ -1,0 +1,28 @@
+.footer {
+	width: 100%;
+	background:
+	#343a40 !important;
+	color:
+	#fff;
+	font-size: 1.25rem;
+	margin-top: 10px;
+}
+
+.content{
+	width:90%;
+	margin:auto;
+	}
+	
+#register_enter_otp, #register_form
+{
+	display:none;
+}
+#RSO_process, #REO_process, #register_submit_process,#LF_process, #REO_resendOTP_process{
+	display:none;
+}
+
+/*Forgot password*/
+#form_fp_emailId, #form_fp_enter_otp, #FOEO_process, #form_fp_process, #form_fp_resetPass, #FPRP_process, #FPEO_process, #form_fpro_process{
+	display:none;
+}
+/*Forgot password ENDS*/

@@ -1,47 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<!--<script type="text/javascript" src="<?php echo e(asset('js/app.js')); ?>"></script>
-<link href="<?php echo e(asset('css/app.css')); ?>" type="text/css" rel="stylesheet">-->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link href="<?php echo e(asset('css/custom.css')); ?>" type="text/css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="<?php echo e(asset('js/site-ready.js')); ?>"></script>
-
+    <meta charset="utf-8">
+    <title>Login</title>    
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500' rel='stylesheet'>
+    <link type='text/css'  href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet"> 
+    <link href="<?php echo e(asset('theme/assets/css/forms.css')); ?>" type="text/css" rel="stylesheet">                                    
+	<link href="<?php echo e(asset('theme/assets/plugins/dropdown.js/jquery.dropdown.css')); ?>" type="text/css" rel="stylesheet">           
+	<link href="<?php echo e(asset('theme/assets/plugins/form-select2/select2.css')); ?>" type="text/css" rel="stylesheet">                       
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="<?php echo e(asset('theme/style.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('theme/css/font-awesome.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('theme/css/font-awesome.min.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('theme/css/materialicon.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('css/custom.css')); ?>" />
 </head>
 
-<body>
-<div class="header"> <?php $__env->startSection('header'); ?>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
+    <body class="animated-content infobar-overlay">
+    
+<div id="top-bar" class="header-top"> <?php $__env->startSection('header'); ?>
+  
+<img src="<?php echo e(asset('theme/img/logo.png')); ?>" width="250px" />
+<div class="header-top-right">
+<i _ngcontent-xvg-c19="" class="material-icons icon-image-preview" style="font-size: 40px;">menu</i>
+<a href="<?php echo $__env->yieldContent('loginSignUpLink'); ?>"><?php echo $__env->yieldContent('loginSignUpLinkText'); ?></a>
+</div>  <?php echo $__env->yieldSection(); ?> </div>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-  </div>
-</nav> 
-  <?php echo $__env->yieldSection(); ?> </div>
-<div class="content">
+<div class="container">
 	<?php $__env->startSection('content'); ?>
 	<h1>Content part</h1>
     <?php echo $__env->yieldSection(); ?>
@@ -52,5 +40,20 @@
     <?php echo $__env->yieldSection(); ?>
 </div>-->
 
+    <!-- Load site level scripts -->
+
+<script src="<?php echo e(asset('theme/assets/js/jquery-1.10.2.min.js')); ?>"></script> 							<!-- Load jQuery -->
+<script src="<?php echo e(asset('theme/assets/js/jqueryui-1.10.3.min.js')); ?>"></script> 							<!-- Load jQueryUI -->
+<script src="<?php echo e(asset('theme/assets/js/bootstrap.min.js')); ?>"></script> 								<!-- Load Bootstrap -->
+<script src="<?php echo e(asset('theme/assets/plugins/form-select2/select2.min.js')); ?>"></script>                     			<!-- Advanced Select Boxes -->
+<script src="<?php echo e(asset('theme/assets/plugins/dropdown.js/jquery.dropdown.js')); ?>"></script> <!-- Fancy Dropdowns -->
+<script src="<?php echo e(asset('theme/assets/plugins/bootstrap-material-design/js/material.min.js')); ?>"></script> <!-- Bootstrap Material -->
+<script src="<?php echo e(asset('theme/assets/plugins/bootstrap-material-design/js/ripples.min.js')); ?>"></script> <!-- Bootstrap Material -->
+
+<script src="assets/js/forms.js"></script>
+
+
+<script src="<?php echo e(asset('js/site-ready.js')); ?>"></script>
+<script src="<?php echo e(asset('js/site-functions.js')); ?>"></script>
 </body>
 </html><?php /**PATH C:\xampp\htdocs\masterLawyer\resources\views/layout.blade.php ENDPATH**/ ?>
